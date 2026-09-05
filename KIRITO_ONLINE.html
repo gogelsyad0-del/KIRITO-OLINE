@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIRITO ONLINE</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial,sans-serif;color:#fff;min-height:100vh;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(212,175,55,.15),transparent 30%),
+    radial-gradient(circle at 80% 60%,rgba(255,215,100,.10),transparent 35%),
+    linear-gradient(135deg,#050505,#101018,#080808);
+  background-attachment:fixed;
+}
+header{
+  padding:22px 5%;display:flex;justify-content:space-between;align-items:center;
+  background:rgba(10,10,15,.85);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,215,100,.25);
+}
+.logo{font-size:26px;font-weight:bold;letter-spacing:3px}
+.logo span{color:#f1d27a}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:bold}
+.container{padding:25px 4%}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{
+  padding:18px;border-radius:20px;background:rgba(18,18,25,.88);
+  border:1px solid rgba(241,210,122,.25);
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+  backdrop-filter:blur(10px);transition:.3s;
+}
+.card:hover{transform:translateY(-4px);border-color:#f1d27a}
+.icon{
+  width:48px;height:48px;display:flex;align-items:center;justify-content:center;
+  font-size:23px;border-radius:14px;margin-bottom:14px;
+  background:linear-gradient(135deg,rgba(241,210,122,.2),rgba(100,80,20,.15));
+}
+.card h2{font-size:18px;margin-bottom:10px}
+.card p{color:#aaa;line-height:1.5;min-height:45px}
+.price{color:#f1d27a;font-size:19px;font-weight:bold;margin:16px 0}
+button{
+  width:100%;padding:13px;border:0;border-radius:12px;font-weight:bold;cursor:pointer;
+  background:linear-gradient(135deg,#f1d27a,#d4af55);color:#222;
+}
+button:hover{box-shadow:0 0 20px rgba(241,210,122,.4)}
+@media(max-width:600px){header{padding:18px 5%}.logo{font-size:19px}nav a{font-size:12px;margin-left:10px}.container{padding:18px 3%}.products{gap:12px}.card{padding:14px}.card h2{font-size:15px}.card p{font-size:12px}.price{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">KIRITO <span>ONLINE</span></div>
+  <nav><a href="#produk">Produk</a><a href="#kontak">Kontak</a></nav>
+</header>
+<div class="container" id="produk">
+  <div class="products">
+    <div class="card"><div class="icon">✦</div><h2>Alight Motion</h2><p>Akun 1 Tahun Private</p><div class="price">Rp3.000</div><button>Order Sekarang</button></div>
+    <div class="card"><div class="icon">✦</div><h2>Spotify</h2><p>1 Bulan · No Garansi</p><div class="price">Rp13.000</div><button>Order Sekarang</button></div>
+    <div class="card"><div class="icon">✦</div><h2>Canva Pro</h2><p>Head · 3 Bulan</p><div class="price">Rp10.000</div><button>Order Sekarang</button></div>
+    <div class="card"><div class="icon">✦</div><h2>Canva Pro</h2><p>3 Bulan · Invite</p><div class="price">Rp5.000</div><button>Order Sekarang</button></div>
+    <div class="card"><div class="icon">✦</div><h2>CapCut Pro</h2><p>1 Minggu · Privat</p><div class="price">Rp7.000</div><button>Order Sekarang</button></div>
+    <div class="card"><div class="icon">✦</div><h2>CapCut Pro</h2><p>1 Bulan</p><div class="price">Rp34.000</div><button>Order Sekarang</button></div>
+  </div>
+</div>
+</body>
+</html>
